@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-surface":"#2d3135","on-error-container":"#93000a","surface-container-high":"#e5e8ee","surface-container-low":"#f1f4f9","on-error":"#ffffff","background":"#f7f9ff","on-secondary-container":"#612400","on-tertiary-container":"#e1f7e4","secondary-container":"#ff7a30","on-tertiary-fixed":"#0d1f14","on-primary-container":"#cbffc2","inverse-primary":"#88d982","error-container":"#ffdad6","tertiary-fixed":"#d2e8d6","surface-variant":"#e0e3e8","on-secondary-fixed-variant":"#7a2f00","primary":"#0d631b","on-background":"#181c20","outline-variant":"#bfcaba","tertiary":"#465a4c","inverse-on-surface":"#eef1f6","on-secondary-fixed":"#351000","on-surface":"#181c20","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#ffb693","error":"#ba1a1a","surface-bright":"#f7f9ff","outline":"#707a6c","surface-container":"#ebeef3","on-secondary":"#ffffff","surface-dim":"#d7dadf","surface-tint":"#1b6d24","on-surface-variant":"#40493d","primary-fixed":"#a3f69c","on-tertiary-fixed-variant":"#384b3e","on-tertiary":"#ffffff","tertiary-container":"#5e7364","on-primary-fixed-variant":"#005312","surface-container-highest":"#e0e3e8","primary-container":"#2e7d32","secondary-fixed":"#ffdbcc","primary-fixed-dim":"#88d982","secondary":"#a04100","on-primary-fixed":"#002204","surface":"#f7f9ff","tertiary-fixed-dim":"#b6ccba","on-primary":"#ffffff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"space-xl":"2rem","gutter-mobile":"0.75rem","margin-desktop":"2.5rem","space-lg":"1.5rem","space-md":"1rem",margin:"1rem","space-sm":"0.5rem",gutter:"1rem","gutter-desktop":"1.5rem","space-xs":"0.25rem","margin-mobile":"1rem"},fontFamily:{"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"title-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"title-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"]},fontSize:{"headline-sm":["20px",{lineHeight:"28px",fontWeight:"600"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"title-sm":["16px",{lineHeight:"22px",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"label-sm":["11px",{lineHeight:"14px",letterSpacing:"0.04em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"body-sm":["12px",{lineHeight:"18px",fontWeight:"400"}],"title-md":["18px",{lineHeight:"24px",fontWeight:"600"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-lg-mobile":["26px",{lineHeight:"34px",letterSpacing:"-0.01em",fontWeight:"700"}],"body-lg":["16px",{lineHeight:"24px",fontWeight:"400"}],"display-lg":["40px",{lineHeight:"48px",letterSpacing:"-0.02em",fontWeight:"700"}],"body-md":["14px",{lineHeight:"20px",fontWeight:"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-margin-desktop flex items-center justify-between gap-gutter-desktop"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="menu" href="#"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-[0_4px_12px_rgba(13,99,27,0.2)]"><span class="material-symbols-outlined text-[24px]">local_cafe</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-tight tracking-tight">Siluzz Cafe</span><span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider">Mindful Nutrition</span></div></a><nav class="hidden md:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg font-bold rounded-full px-space-md py-space-xs"><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="menu" href="#">Menu</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="special-diets" href="#">Special Diets</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="about-our-kitchen" href="#">About Our Kitchen</a><a class="px-space-md py-space-xs rounded-full font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-path="order-history" href="#">Order History</a></nav></div><div class="flex items-center gap-space-md"><a class="relative flex items-center justify-center w-11 h-11 rounded-xl bg-surface-container-lowest shadow-[0_2px_6px_-1px_rgba(33,37,41,0.04)] hover:bg-surface-container transition-colors" data-path="cart-checkout" href="#"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">shopping_bag</span><span class="absolute -top-1.5 -right-1.5 min-w-[20px] h-5 px-1 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm flex items-center justify-center shadow-sm">3</span></a><a class="flex items-center gap-space-sm pl-space-xs pr-space-sm py-space-xs rounded-full hover:bg-surface-container transition-colors" data-path="customer-account" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><span class="hidden lg:inline font-label-lg text-label-lg text-on-surface">Elena R.</span></a></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="max-w-[1280px] w-full mx-auto px-margin-desktop py-space-lg">
+<!-- Top Step Breadcrumb / Flow Indicator -->
+<div class="flex items-center justify-between mb-space-lg">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-tertiary">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="menu" href="#">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+          Back to Menu
+        </a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Your Review Basket</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-1.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wide">Live Cart Sync</span>
+</div>
+<span class="font-body-sm text-body-sm text-tertiary">Order ID: <span class="font-semibold text-on-surface">#SLZ-8492</span></span>
+</div>
+</div>
+<!-- Main Two-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left Column (Main Cart Items & Instructions, ~65%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Cart Header Block -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-primary text-[22px]" style="font-variation-settings: 'FILL' 1;">shopping_bag</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Siluzz Clean Prep</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">My Healthy Cart</h1>
+<p class="font-body-md text-body-md text-tertiary flex items-center gap-1.5 mt-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span id="active-item-count">3 mindful choices selected</span>
+<span class="text-outline-variant">•</span>
+<span>Total 4 items</span>
+</p>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-tertiary hover:text-error transition-all font-label-md text-label-md self-start sm:self-auto group" id="clear-cart-btn">
+<span class="material-symbols-outlined text-[18px] group-hover:rotate-12 transition-transform">delete_sweep</span>
+            Clear Cart
+          </button>
+</div>
+<!-- Eco Delivery Incentive Banner -->
+<div class="relative overflow-hidden bg-primary-container text-on-primary-container p-space-md rounded-2xl shadow-sm flex items-center justify-between gap-space-md">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-primary/20 pointer-events-none blur-xl"></div>
+<div class="flex items-center gap-space-md relative z-10">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-title-sm font-bold text-on-primary-container">Free Eco Delivery Unlocked!</span>
+<span class="bg-surface-container-lowest/90 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">₹0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container/85 mt-0.5">
+                Organic, biodegradable sugarcane packaging applied to this entire order.
+              </p>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-1.5 bg-surface-container-lowest/20 backdrop-blur-md px-space-md py-2 rounded-xl shrink-0">
+<span class="material-symbols-outlined text-on-primary-container text-[18px]">electric_moped</span>
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase font-semibold">Zero Carbon</span>
+</div>
+</div>
+<!-- Items Container -->
+<div class="flex flex-col gap-space-md" id="cart-item-list">
+<!-- Item 1: Grilled Vegetable & Hummus Wrap -->
+<div class="cart-card bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md relative" data-item-id="wrap">
+<div class="flex items-start gap-space-md w-full md:w-auto">
+<!-- Item Image -->
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0 bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up artisanal culinary shot of a freshly toasted whole wheat wrap filled with vibrant roasted bell peppers, zucchini, crisp purple cabbage, and velvety smooth homemade garlic chickpeas hummus on an unbleached organic napkin." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM61R89VML-TzudSMllL0pfpvMoJRQZrgtlrU-rFvx8AyWy8cFbUNtsec4xzvat2pwfQEafG9UPRzuT4BgOIQwbc0WO4LI_CaUXxQStlTJubGWlhGl-yinHkOQei2TaUy22XqpncfOW7QOL5k48vhCAz7qY_h8UpLCNOHLvMtA2fin9_iYiEpT3S6x_KoCcCToJYl44GoA3porptwfvaRhqXY8OhB5VZ_BJO0dlCAv"/>
+<span class="absolute top-1.5 left-1.5 bg-surface-container-lowest/95 backdrop-blur-md text-primary p-1 rounded-md shadow-xs flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</span>
+</div>
+<!-- Item Details -->
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold uppercase tracking-wider">Vegan Safe</span>
+<span class="font-body-sm text-body-sm text-tertiary">380 kcal • 14g Protein</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-1 truncate">Grilled Vegetable &amp; Hummus Wrap</h3>
+<div class="flex items-center gap-1.5 mt-1 bg-surface-container-low px-2.5 py-1 rounded-lg w-fit">
+<span class="material-symbols-outlined text-[15px] text-tertiary">tune</span>
+<span class="font-body-sm text-body-sm text-tertiary truncate">No onion, extra hummus</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1.5">₹140 each</span>
+</div>
+</div>
+<!-- Stepper, Line Total, Actions -->
+<div class="flex items-center justify-between md:justify-end gap-space-lg w-full md:w-auto pt-space-xs md:pt-0">
+<!-- Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-full px-1.5 py-1 shadow-inner">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors stepper-btn" data-action="decrement">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-title-sm text-title-sm text-on-surface px-space-md tabular-nums font-bold item-qty">2</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors stepper-btn" data-action="increment">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<!-- Line Total -->
+<div class="text-right min-w-[110px]">
+<div class="font-title-md text-title-md font-bold text-on-surface line-total">₹280</div>
+<span class="font-label-sm text-label-sm text-outline item-math">2 × ₹140</span>
+</div>
+<!-- Delete Action -->
+<button aria-label="Remove item" class="w-9 h-9 rounded-xl flex items-center justify-center text-outline hover:text-error hover:bg-error-container/30 transition-all remove-item-btn" title="Remove wrap from cart">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Tofu & Veggie Stir-Fry -->
+<div class="cart-card bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md relative" data-item-id="stirfry">
+<div class="flex items-start gap-space-md w-full md:w-auto">
+<!-- Item Image -->
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0 bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Top down gourmet photography of a nutrient dense warm stir fry bowl with golden seared organic tofu cubes, steamed green broccoli florets, snap peas, and sesame seeds over steamed wholesome brown rice in an earthy ceramic bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYeRPB56MMq-h9LLGm5iHkLnQL7OA3jKj0HIRipUCnxOHdqeSxE2W84fartF0-4lx9sEUDGniAICJtbgVNz_5LLqNOFPstH8BcaFrGc-_YWKwBbceA5wHkoRn9TbTyLwK5kTH1VNNRwFXisXJhElw5DHtl6gD5eGd_XrxvRxxLK5Zg74uxcjbfjmt988dRclPzI7c1DF07lsnaUHg8Q4EYMAfp8Prbi66G6fDDPUoF"/>
+<span class="absolute top-1.5 left-1.5 bg-surface-container-lowest/95 backdrop-blur-md text-primary p-1 rounded-md shadow-xs flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</span>
+</div>
+<!-- Item Details -->
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-bold uppercase tracking-wider">High Protein</span>
+<span class="font-body-sm text-body-sm text-tertiary">440 kcal • 22g Protein</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-1 truncate">Tofu &amp; Veggie Stir-Fry</h3>
+<div class="flex items-center gap-1.5 mt-1 bg-surface-container-low px-2.5 py-1 rounded-lg w-fit">
+<span class="material-symbols-outlined text-[15px] text-tertiary">tune</span>
+<span class="font-body-sm text-body-sm text-tertiary truncate">Mild spice, brown rice option</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1.5">₹210 each</span>
+</div>
+</div>
+<!-- Stepper, Line Total, Actions -->
+<div class="flex items-center justify-between md:justify-end gap-space-lg w-full md:w-auto pt-space-xs md:pt-0">
+<!-- Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-full px-1.5 py-1 shadow-inner">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors stepper-btn" data-action="decrement">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-title-sm text-title-sm text-on-surface px-space-md tabular-nums font-bold item-qty">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors stepper-btn" data-action="increment">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<!-- Line Total -->
+<div class="text-right min-w-[110px]">
+<div class="font-title-md text-title-md font-bold text-on-surface line-total">₹210</div>
+<span class="font-label-sm text-label-sm text-outline item-math">1 × ₹210</span>
+</div>
+<!-- Delete Action -->
+<button aria-label="Remove item" class="w-9 h-9 rounded-xl flex items-center justify-center text-outline hover:text-error hover:bg-error-container/30 transition-all remove-item-btn" title="Remove stir-fry from cart">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Cold-Pressed Juice -->
+<div class="cart-card bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm transition-all hover:shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md relative" data-item-id="juice">
+<div class="flex items-start gap-space-md w-full md:w-auto">
+<!-- Item Image -->
+<div class="relative w-24 h-24 rounded-xl overflow-hidden shrink-0 bg-surface-container-low shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Chilled condensation droplets on a clean glass bottle filled with deep emerald raw cold-pressed celery cucumber kale green detox juice, framed by subtle mint sprigs and natural soft morning sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3p3FlbEhSwMxziEwBlgYRjuKn9aT0vr2sSTnW7PS8Ynksp9dt-x3yam5FyIuzG_ridQV-PiZ4KQYOLa6lSsDuGQ8oibiiJqtYVTkSUnm3I1ddDb9rG2WPoOvca3Nuag5TSsO93lLz6q93oFwBBdKwWj6p4lqgKba5aDFWn-PiZK2XA8MdvSQcHtslGc3tWeF10vvxX6RWEEV3ir-vBEMgMN5QuzvVNO235zTookmC"/>
+<span class="absolute top-1.5 left-1.5 bg-surface-container-lowest/95 backdrop-blur-md text-secondary-container p-1 rounded-md shadow-xs flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+</span>
+</div>
+<!-- Item Details -->
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-bold uppercase tracking-wider">Raw Botanicals</span>
+<span class="font-body-sm text-body-sm text-tertiary">95 kcal • Zero Sugar</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface mt-1 truncate">Cold-Pressed Juice</h3>
+<div class="flex items-center gap-1.5 mt-1 bg-surface-container-low px-2.5 py-1 rounded-lg w-fit">
+<span class="material-symbols-outlined text-[15px] text-primary">local_florist</span>
+<span class="font-body-sm text-body-sm text-primary font-medium truncate">Green Detox (300ml)</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant mt-1.5">₹110 each</span>
+</div>
+</div>
+<!-- Stepper, Line Total, Actions -->
+<div class="flex items-center justify-between md:justify-end gap-space-lg w-full md:w-auto pt-space-xs md:pt-0">
+<!-- Stepper -->
+<div class="flex items-center bg-surface-container-low rounded-full px-1.5 py-1 shadow-inner">
+<button aria-label="Decrease quantity" class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors stepper-btn" data-action="decrement">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="font-title-sm text-title-sm text-on-surface px-space-md tabular-nums font-bold item-qty">1</span>
+<button aria-label="Increase quantity" class="w-8 h-8 rounded-full bg-surface-container-lowest flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors stepper-btn" data-action="increment">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<!-- Line Total -->
+<div class="text-right min-w-[110px]">
+<div class="font-title-md text-title-md font-bold text-on-surface line-total">₹110</div>
+<span class="font-label-sm text-label-sm text-outline item-math">1 × ₹110</span>
+</div>
+<!-- Delete Action -->
+<button aria-label="Remove item" class="w-9 h-9 rounded-xl flex items-center justify-center text-outline hover:text-error hover:bg-error-container/30 transition-all remove-item-btn" title="Remove cold-pressed juice from cart">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Special Cooking Requests Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">skillet</span>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface">Add Cooking Requests?</h4>
+<p class="font-body-sm text-body-sm text-tertiary mt-0.5">Less pink salt, cold oil finish, or allergen alerts available</p>
+</div>
+</div>
+<button class="px-space-md py-2 rounded-xl bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5" id="toggle-instruction-btn">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+<span id="instruction-btn-label">Add Note</span>
+</button>
+</div>
+<!-- Collapsible Note Field -->
+<div class="hidden mt-space-md pt-space-md border-t border-transparent bg-surface-container-low p-space-md rounded-xl" id="instruction-input-container">
+<textarea class="w-full bg-surface-container-lowest text-on-surface rounded-lg p-3 text-body-md font-body-md outline-none focus:ring-2 focus:ring-primary placeholder:text-outline-variant resize-none" id="instruction-textarea" placeholder="e.g. Please steam vegetables lightly, replace dressing with extra lime slice..." rows="2"></textarea>
+<div class="flex justify-end gap-space-sm mt-space-xs">
+<button class="px-space-md py-1.5 rounded-lg text-tertiary font-label-md text-label-md hover:text-on-surface" id="cancel-note-btn">Cancel</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors" id="save-note-btn">Save Preference</button>
+</div>
+</div>
+<div class="hidden mt-space-sm text-body-sm font-body-sm text-primary flex items-center gap-1.5 bg-primary-fixed/20 p-2.5 rounded-lg" id="instruction-saved-display">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="italic" id="instruction-saved-text"></span>
+</div>
+</div>
+<!-- Cafe Quality Promise Banner -->
+<div class="bg-surface-container p-space-lg rounded-2xl flex flex-col sm:flex-row items-center gap-space-md shadow-xs">
+<div class="w-12 h-12 rounded-2xl bg-surface-container-lowest text-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex-1 text-center sm:text-left">
+<div class="flex items-center justify-center sm:justify-start gap-space-xs">
+<h5 class="font-title-sm text-title-sm text-on-surface font-bold">Zero Refined Sugar &amp; Cold-Pressed Oils</h5>
+<span class="font-label-sm text-label-sm text-primary font-bold px-2 py-0.5 bg-surface-container-lowest rounded-full">100% Honest</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary mt-1">
+              Every mindful recipe is prepared in Siluzz certified sterile cloud kitchens using whole food produce from local regenerative farms.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column (Sticky Order Summary Sidebar, ~35%) -->
+<div class="lg:col-span-4 sticky top-24 flex flex-col gap-space-md">
+<!-- Diet Reward Coupon Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_offer</span>
+<span class="font-title-sm text-title-sm text-on-surface">Diet Reward Coupon</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-fixed px-2 py-0.5 rounded-full font-bold">Club Perk</span>
+</div>
+<!-- Active Applied Coupon -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex items-center justify-between mb-space-sm" id="applied-coupon-box">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-lg text-label-lg font-bold text-on-surface tracking-wider">SILUZZHEALTH</span>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-1.5 py-0.2 rounded font-semibold">Applied</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary truncate">₹50 saved on healthy picks</p>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-error hover:underline px-2 py-1 font-semibold shrink-0" id="remove-coupon-btn">
+              Remove
+            </button>
+</div>
+<!-- Coupon Input & Apply Alternative -->
+<div class="flex items-center gap-space-xs">
+<div class="relative flex-1">
+<input class="w-full bg-surface-container-low text-on-surface rounded-xl px-space-md py-2.5 font-label-md text-label-md uppercase tracking-wider outline-none focus:ring-2 focus:ring-primary placeholder:capitalize placeholder:tracking-normal placeholder:text-outline" id="coupon-input" placeholder="Enter other voucher code" type="text"/>
+</div>
+<button class="px-space-md py-2.5 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-bold" id="apply-coupon-btn">
+              Apply
+            </button>
+</div>
+<div class="hidden text-label-sm font-label-sm mt-1 px-1" id="coupon-status-msg"></div>
+</div>
+<!-- Bill Details Breakdown Card -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-title-md text-title-md text-on-surface">Bill Details</span>
+<span class="font-label-sm text-label-sm text-tertiary">INR (₹)</span>
+</div>
+<div class="flex flex-col gap-space-sm font-body-md text-body-md">
+<!-- Subtotal -->
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+                Item Subtotal
+                <span class="material-symbols-outlined text-[16px] text-outline cursor-help" title="Total base cost of all selected meals">info</span>
+</span>
+<span class="font-title-sm text-title-sm text-on-surface tabular-nums" id="bill-subtotal">₹600.00</span>
+</div>
+<!-- Discount -->
+<div class="flex items-center justify-between text-primary" id="bill-discount-row">
+<span class="flex items-center gap-1.5">
+                Promo Discount (<span class="font-semibold" id="bill-coupon-tag">SILUZZHEALTH</span>)
+              </span>
+<span class="font-title-sm text-title-sm font-bold tabular-nums" id="bill-discount-val">-₹50.00</span>
+</div>
+<!-- Delivery -->
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+                Delivery / Eco-Packaging
+                <span class="font-label-sm text-label-sm text-primary font-semibold">100% Recycled</span>
+</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-bold">FREE</span>
+</div>
+<!-- Taxes -->
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+                Taxes (GST 5%)
+                <span class="text-tertiary text-body-sm font-body-sm">(CGST 2.5% + SGST 2.5%)</span>
+</span>
+<span class="font-title-sm text-title-sm text-on-surface tabular-nums" id="bill-tax">₹27.50</span>
+</div>
+</div>
+<!-- Divider -->
+<div class="h-px bg-surface-container-high w-full"></div>
+<!-- Grand Total Row -->
+<div class="flex items-start justify-between">
+<div>
+<span class="font-title-md text-title-md font-bold text-on-surface">To Pay</span>
+<p class="font-body-sm text-body-sm text-tertiary mt-0.5">Inclusive of all taxes &amp; charges</p>
+</div>
+<div class="text-right">
+<div class="font-headline-md text-headline-md font-bold text-on-surface tabular-nums" id="bill-grand-total">₹577.50</div>
+<span class="inline-block mt-0.5 font-label-sm text-label-sm text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full font-bold" id="bill-savings-tag">
+                You Save ₹50.00!
+              </span>
+</div>
+</div>
+<!-- High-Contrast CTA Button -->
+<button class="w-full mt-space-xs py-3.5 px-space-lg rounded-xl bg-secondary-container hover:bg-secondary text-on-secondary font-title-sm text-title-sm font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-space-sm group active:scale-[0.99]" id="proceed-checkout-btn">
+<span>Proceed to Checkout</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Micro-Trust Assurances -->
+<div class="bg-surface-container-low p-space-sm rounded-xl flex flex-col gap-2">
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">timer</span>
+<span>Guaranteed <strong>35-min</strong> eco delivery • 100% Contactless</span>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-surface-container font-label-sm text-label-sm text-outline">
+<span>Secure Transactions:</span>
+<div class="flex items-center gap-2">
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded font-bold text-on-surface text-[10px]">UPI</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded font-bold text-on-surface text-[10px]">CARDS</span>
+<span class="bg-surface-container-lowest px-1.5 py-0.5 rounded font-bold text-on-surface text-[10px]">NETBANKING</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Kitchen Carbon Offset Metric -->
+<div class="p-space-md rounded-2xl bg-surface-container-low flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">energy_savings_leaf</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-primary font-bold uppercase">Sustainability Impact</div>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">
+              This zero-plastic order saves approx. <strong>140g</strong> single-use food packaging waste.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Client Behavior -->
+<script>
+    (function initCartManager() {
+      // Internal State
+      const cartItems = {
+        wrap: { price: 140, qty: 2, name: 'Grilled Vegetable & Hummus Wrap' },
+        stirfry: { price: 210, qty: 1, name: 'Tofu & Veggie Stir-Fry' },
+        juice: { price: 110, qty: 1, name: 'Cold-Pressed Juice' }
+      };
+
+      let discount = 50.00;
+      let activeCoupon = 'SILUZZHEALTH';
+
+      // Selectors
+      const subtotalEl = document.getElementById('bill-subtotal');
+      const discountRow = document.getElementById('bill-discount-row');
+      const discountValEl = document.getElementById('bill-discount-val');
+      const couponTagEl = document.getElementById('bill-coupon-tag');
+      const taxEl = document.getElementById('bill-tax');
+      const grandTotalEl = document.getElementById('bill-grand-total');
+      const savingsTagEl = document.getElementById('bill-savings-tag');
+      const itemCountEl = document.getElementById('active-item-count');
+
+      const couponBox = document.getElementById('applied-coupon-box');
+      const couponInput = document.getElementById('coupon-input');
+      const applyCouponBtn = document.getElementById('apply-coupon-btn');
+      const removeCouponBtn = document.getElementById('remove-coupon-btn');
+      const couponMsg = document.getElementById('coupon-status-msg');
+
+      function calculateTotals() {
+        let subtotal = 0;
+        let totalQty = 0;
+        let uniqueItems = 0;
+
+        for (const key in cartItems) {
+          const item = cartItems[key];
+          if (item.qty > 0) {
+            subtotal += item.price * item.qty;
+            totalQty += item.qty;
+            uniqueItems++;
+          }
+        }
+
+        // Apply discount constraint
+        let actualDiscount = 0;
+        if (discount > 0 && subtotal > 0) {
+          actualDiscount = Math.min(discount, subtotal);
+        }
+
+        // GST 5% on discounted subtotal
+        const taxableAmount = Math.max(0, subtotal - actualDiscount);
+        const gst = taxableAmount * 0.05;
+        const grandTotal = taxableAmount + gst;
+
+        // Render to UI
+        subtotalEl.textContent = '₹' + subtotal.toFixed(2);
+        
+        if (actualDiscount > 0) {
+          discountRow.classList.remove('hidden');
+          discountValEl.textContent = '-₹' + actualDiscount.toFixed(2);
+          couponTagEl.textContent = activeCoupon;
+          savingsTagEl.textContent = 'You Save ₹' + actualDiscount.toFixed(2) + '!';
+          savingsTagEl.classList.remove('hidden');
+        } else {
+          discountRow.classList.add('hidden');
+          savingsTagEl.classList.add('hidden');
+        }
+
+        taxEl.textContent = '₹' + gst.toFixed(2);
+        grandTotalEl.textContent = '₹' + grandTotal.toFixed(2);
+        
+        if (itemCountEl) {
+          itemCountEl.textContent = uniqueItems + ' mindful ' + (uniqueItems === 1 ? 'choice' : 'choices') + ' selected';
+        }
+
+        return { subtotal, grandTotal, totalQty };
+      }
+
+      // Quantity Handlers
+      document.querySelectorAll('.cart-card').forEach(card => {
+        const itemId = card.getAttribute('data-item-id');
+        const qtyEl = card.querySelector('.item-qty');
+        const totalEl = card.querySelector('.line-total');
+        const mathEl = card.querySelector('.item-math');
+
+        card.querySelectorAll('.stepper-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const action = btn.getAttribute('data-action');
+            if (action === 'increment') {
+              cartItems[itemId].qty += 1;
+            } else if (action === 'decrement' && cartItems[itemId].qty > 1) {
+              cartItems[itemId].qty -= 1;
+            }
+            
+            const currentQty = cartItems[itemId].qty;
+            const price = cartItems[itemId].price;
+            qtyEl.textContent = currentQty;
+            totalEl.textContent = '₹' + (currentQty * price);
+            mathEl.textContent = currentQty + ' × ₹' + price;
+            calculateTotals();
+          });
+        });
+
+        // Remove item button
+        const removeBtn = card.querySelector('.remove-item-btn');
+        if (removeBtn) {
+          removeBtn.addEventListener('click', () => {
+            card.style.opacity = '0';
+            card.style.transform = 'scale(0.95)';
+            card.style.transition = 'all 0.25s ease';
+            setTimeout(() => {
+              card.remove();
+              delete cartItems[itemId];
+              calculateTotals();
+            }, 250);
+          });
+        }
+      });
+
+      // Clear all
+      const clearBtn = document.getElementById('clear-cart-btn');
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          if (confirm('Clear all healthy choices from your cart?')) {
+            for (const key in cartItems) {
+              delete cartItems[key];
+            }
+            const list = document.getElementById('cart-item-list');
+            list.innerHTML = `
+              <div class="bg-surface-container-lowest p-12 rounded-2xl text-center shadow-sm">
+                <span class="material-symbols-outlined text-[48px] text-primary mb-2">eco</span>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface">Your clean tray is empty</h3>
+                <p class="font-body-md text-body-md text-tertiary mt-1 mb-6">Explore our fresh kitchen creations and macro-balanced bowls.</p>
+                <a href="#" data-path="menu" class="inline-flex px-6 py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary-container transition-colors">Browse Menu</a>
+              </div>
+            `;
+            calculateTotals();
+          }
+        });
+      }
+
+      // Coupon removal
+      if (removeCouponBtn) {
+        removeCouponBtn.addEventListener('click', () => {
+          discount = 0;
+          activeCoupon = '';
+          couponBox.classList.add('hidden');
+          couponMsg.textContent = 'SILUZZHEALTH coupon removed';
+          couponMsg.className = 'font-label-sm text-label-sm mt-1 px-1 text-tertiary block';
+          calculateTotals();
+        });
+      }
+
+      // Coupon application
+      if (applyCouponBtn) {
+        applyCouponBtn.addEventListener('click', () => {
+          const val = (couponInput.value || '').trim().toUpperCase();
+          if (!val) {
+            couponMsg.textContent = 'Please enter a voucher code.';
+            couponMsg.className = 'font-label-sm text-label-sm mt-1 px-1 text-error block';
+            return;
+          }
+
+          if (val === 'SILUZZHEALTH' || val === 'ORGANIC20' || val === 'GREEN50') {
+            discount = 50.00;
+            activeCoupon = val;
+            couponBox.classList.remove('hidden');
+            couponBox.querySelector('.text-on-surface').textContent = val;
+            couponInput.value = '';
+            couponMsg.textContent = 'Code ' + val + ' applied successfully!';
+            couponMsg.className = 'font-label-sm text-label-sm mt-1 px-1 text-primary block';
+            calculateTotals();
+          } else {
+            couponMsg.textContent = 'Invalid promo code for this order.';
+            couponMsg.className = 'font-label-sm text-label-sm mt-1 px-1 text-error block';
+          }
+        });
+      }
+
+      // Special Request note accordion
+      const toggleNoteBtn = document.getElementById('toggle-instruction-btn');
+      const noteContainer = document.getElementById('instruction-input-container');
+      const cancelNoteBtn = document.getElementById('cancel-note-btn');
+      const saveNoteBtn = document.getElementById('save-note-btn');
+      const noteDisplay = document.getElementById('instruction-saved-display');
+      const noteDisplayText = document.getElementById('instruction-saved-text');
+      const noteTextarea = document.getElementById('instruction-textarea');
+      const noteBtnLabel = document.getElementById('instruction-btn-label');
+
+      if (toggleNoteBtn) {
+        toggleNoteBtn.addEventListener('click', () => {
+          noteContainer.classList.toggle('hidden');
+        });
+      }
+
+      if (cancelNoteBtn) {
+        cancelNoteBtn.addEventListener('click', () => {
+          noteContainer.classList.add('hidden');
+        });
+      }
+
+      if (saveNoteBtn) {
+        saveNoteBtn.addEventListener('click', () => {
+          const text = noteTextarea.value.trim();
+          if (text) {
+            noteDisplayText.textContent = '"' + text + '"';
+            noteDisplay.classList.remove('hidden');
+            noteBtnLabel.textContent = 'Edit Note';
+          } else {
+            noteDisplay.classList.add('hidden');
+            noteBtnLabel.textContent = 'Add Note';
+          }
+          noteContainer.classList.add('hidden');
+        });
+      }
+
+      // Proceed to checkout CTA
+      const checkoutBtn = document.getElementById('proceed-checkout-btn');
+      if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', () => {
+          const cartTotal = grandTotalEl.textContent;
+          checkoutBtn.innerHTML = `
+            <span class="inline-block w-4 h-4 rounded-full border-2 border-on-secondary border-t-transparent animate-spin mr-2"></span>
+            <span>Securing Basket...</span>
+          `;
+          setTimeout(() => {
+            alert('Forwarding to Siluzz Instant Checkout • Total: ' + cartTotal);
+            checkoutBtn.innerHTML = `
+              <span>Proceed to Checkout</span>
+              <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+            `;
+          }, 600);
+        });
+      }
+
+      // Initial calculation
+      calculateTotals();
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1280px] mx-auto px-margin-desktop py-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg text-on-surface-variant"><div class="flex items-center gap-space-sm"><div class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[16px]">eco</span></div><span class="font-title-sm text-title-sm text-on-surface">Siluzz Cafe</span><span class="font-body-sm text-body-sm text-tertiary">• Fresh, organic wholesome dining</span></div><div class="flex items-center gap-space-lg font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" data-path="menu" href="#">Menu</a><a class="hover:text-on-surface transition-colors" data-path="special-diets" href="#">Special Diets</a><a class="hover:text-on-surface transition-colors" data-path="about-our-kitchen" href="#">Our Kitchen</a><a class="hover:text-on-surface transition-colors" data-path="order-history" href="#">Past Orders</a></div><div class="font-body-sm text-body-sm text-outline">© 2025 Siluzz Cafe. All rights reserved.</div></div></footer></body></html>
